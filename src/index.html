@@ -1,36 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>HTML, CSS and SASS Boilerplate</title>
-    <meta
-      name="description"
-      content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-   
-         
-               <div class="image">
-        <div class="container" 
-             style="text-align: center;
-                    margin-top: 5em;">
-           
-              <img src=
-"https://dama.bg/uploaded/posts/cf5b631ba6cbafc2ac956f92fb51e9ad.jpg"
-                 onclick="enlargeImg()" 
-                 id="img1" />
-        </div>
-  
-      
-        <script>
-         
-            function enlargeImg(img) {
-                img.style.transform = "scale(1.5)";
-                img.style.transition =
-                  "transform 0.25s ease";
-            }
-        </script>
-  </body>
+<html>
+	<body>
+        <div class="image">
+		<div class="container"
+			style="text-align: center;
+					margin-top: 5em;">
+			<!-- Image to be enlarged and onclick()
+			function call
+	Passing the reference to this img
+			as a parameter -->
+			<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/geeksforgeeks-6.png"
+				onclick="enlargeImg(this)" />
+		</div>
+
+		<!-- script to set display property -->
+		<script>
+			// Function to increase image size
+			function enlargeImg(img) {
+				img.style.transform = "scale(1.5)";
+				img.style.transition =
+				"transform 0.25s ease";
+			}
+		</script>
+	</body>
 </html>
