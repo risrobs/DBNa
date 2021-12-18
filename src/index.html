@@ -10,9 +10,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <div class="main">
-      <div class="emoji mb-6">💣🤯💥</div>
-      <button class="button">Boom?</button>
-    </div>
+    
+ 
+     <div class="container" 
+             style="text-align: center; 
+                    margin-top: 5em;">
+            <img src=
+"https://dama.bg/uploaded/posts/cf5b631ba6cbafc2ac956f92fb51e9ad.jpg"
+                 onclick="enlargeImg()" 
+                 id="img1" />
+            <br />
+            <br />
+            <br />
+            <button onclick="resetImg()">Reset
+          </button>
+        </div>
+  
+        <script>
+            img = document.getElementById("img1");
+          
+            function enlargeImg() {
+                img.style.width = "60%";
+                img.style.height = "auto";
+                img.style.transition = "width 0.5s ease";
+            }
+            
+            function resetImg() {
+                img.style.width = "40%";
+                img.style.height = "auto";
+                img.style.transition = "width 0.5s ease";
+            }
+        </script>
+           </div>
   </body>
 </html>
